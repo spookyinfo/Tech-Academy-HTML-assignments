@@ -1,0 +1,24 @@
+table {
+	width: 100%;
+	border-style: dotted;
+	border-width: 3 px;
+	border-color: DeepPink;
+}
+
+tr, th {
+	border-bottom-style: dotted;
+	border-bottom-color: DeepPink;
+	font-family: Arial, Helvetica, sans-serif;
+   	background-color: White;
+	color: DodgerBlue;
+}	
+
+td:hover {
+    background-color: DodgerBlue;
+    color: Gainsboro;
+}
+
+tr, td {
+	background-color: Gainsboro;
+	color: DodgerBlue;
+}
