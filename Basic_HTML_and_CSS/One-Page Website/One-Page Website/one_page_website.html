@@ -1,21 +1,87 @@
 <!DOCTYPE html>
 <html>
    <head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	  <title>PORTLAND PUGS & RAGS</title>
 	  <link rel="stylesheet" type="text/css" href="./CSS/one_page_website.css">
    </head>
 <body>
-	<div class="text">
-		<p><h1>WELCOME TO PORTLAND PUGS & RAGS</h1></body></p>
-	
-		<img src="./Images/Pug.jpg" alt="Pug" style="width:100">
-	    <a href="#pugs"><figcaption><li>Click here for our Pugs!</li></figcaption></p>
-		<img src="./Images/Ragamuffin.jpg" alt="Ragamuffin" style="width:100">
-		<a href="#rags"><figcaption><li>Click here for our Rags!</li></figcaption>
-	<br>
-	<br>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/1GLAT1AdAu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   		
+		<p><h1>Welcome To Portland Pugs & Rags</h1></body></p>
+		<div class="row">
+			<div class="column">
+			  <img src="./Images/Pug1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+			<div class="column">
+			  <img src="./Images/Rag1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+			<div class="column">
+			  <img src="./Images/Pug2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+			<div class="column">
+			  <img src="./Images/Rag2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+		  </div>
+		  <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="./Images/Pug1.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="./Images/Rag1.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="./Images/Pug2.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="./Images/Rag2.jpg" style="width:100%">
+			  </div>
+		  
+			  <!-- Next/previous controls -->
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <!-- Caption text -->
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+			  <!-- Thumbnail image controls -->
+			  <div class="column">
+				<img class="demo" src="./Images/Pug1.jpg" onclick="currentSlide(1)" alt="We have pugs currently available.">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Rag1.jpg" onclick="currentSlide(2)" alt="We have ragamuffins currently available.">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Pug2.jpg" onclick="currentSlide(3)" alt="We have pugs currently available.">
+			  </div>
+		  
+			  <div class="column">
+				<img class="demo" src="./Images/Rag2.jpg" onclick="currentSlide(4)" alt="We have ragamuffins currently available.">
+			  </div>
+			</div>
+		  </div>
 
+		  <p>
+		  <a href="pugs">Click here for our pugs!</a>
+		  </p>
+		  <p>
+			<a href="rags">Click here for our rags!</a>  
+		  </p> 
+
+	<br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1GLAT1AdAu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   			
 	<br>
 	<br>
 	<br>
@@ -30,7 +96,7 @@
 			<label>Email:</label>
 				<input type="text" name="Email"><br>	
 			<input type="submit" value="Submit" style="float: right"><br><br><br>
-			</p> 
+			</a> 
 		</form>
 
 		</div>
@@ -38,4 +104,6 @@
 <br>
 <br>
 <footer>&copy; 2019 Portland Pugs & Rags</footer>
+<script src="./JS/one_page_website.js"></script>
+</body>
 </html>
